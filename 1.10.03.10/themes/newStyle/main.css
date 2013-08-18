@@ -1,0 +1,589 @@
+html { height: 100%; }
+
+body {
+	background: #f7f7f7;
+	/*font-family: Helvetica, Tahoma, Verdana, Arial, sans-serif;*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 62.5%; /* 10px */
+	color: #000;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+}
+
+form { margin: 0px; }
+
+/*	 Layout 
+---------------------------------------------------------------*/
+div#container {
+	width: 100%; 
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	font-size: 1.1em; /* 11px */
+}
+
+LI LI, LI P, TD P, BLOCKQUOTE P {
+	font-size:1.1em; /* 11px */
+}
+
+div#page {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+
+#left-col {
+	color: #000;
+	min-width: 250px;
+	width: 20%;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+	clear: left;
+}
+
+#right-col {
+	color: #000;
+	width: 79%;
+	padding: 0px;
+	float: left;
+}
+
+div#header {
+	background: url('images/header.png') repeat-x;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	border-bottom: 1px solid #b8bec3;
+}
+
+div#content {
+	padding: 5px 5px 10px 5px;
+	float: left;
+}
+
+div#footer {
+	background: #dfe5e9;
+	color: #000;
+	width: 100%;
+	clear: both;
+	border-top: 1px solid #b8bec3;
+	border-bottom: 1px solid #b8bec3;
+}
+
+/*  Links 
+---------------------------------------------------------------*/
+a {
+	color: #257AA3;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/*  Breadcrumbs
+---------------------------------------------------------------*/
+#breadCrumbs {
+	color: #3e3e3e;
+	font-weight: bold;
+}
+
+/*  Navigation
+---------------------------------------------------------------*/
+/*
+#nav {
+	height: 60px;
+	line-height: 60px;	
+	margin: 0px;
+	padding: 0px;
+}
+
+#nav .logo {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#nav li {
+	height: 60px;
+	line-height: 60px;
+	float: left;
+	list-style: none;
+}
+
+#nav li a {
+	padding: 3px 15px;
+	display: block;
+	color: #353535;
+	font-weight: bold;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+#nav li a:hover {
+	color: #257AA3;
+}
+*/
+
+#nav li {
+	margin: 13px 0 0 10px;
+	float: left; 
+	display: inline; 
+}
+
+#nav .logo {
+	margin: 0px;
+	padding: 0px;
+}
+
+#nav a {
+	background: url(images/navBG_left.png) top left no-repeat;
+	height: 33px; 
+	padding: 0 0 0 6px; 
+	text-decoration: none; 
+	float: left; 
+}
+
+#nav a span {
+	background: url(images/navBG_right.png) top right no-repeat; 
+	color: #696d70; 
+	height: 33px; 
+	line-height: 33px;
+	padding: 0 10px 0 2px; 
+	font-weight: bold; 
+	text-decoration: none; 
+	vertical-align: middle;
+	float:left; 
+	display: block; 
+	cursor: pointer;
+}
+
+#nav a:hover {
+	background-position: 0% -33px;
+}
+
+#nav a:hover span {
+	background-position: 100% -33px;
+	color: #fff; 
+}
+
+/*  Side Navigation
+---------------------------------------------------------------*/
+#sidenav {
+	width: 200px;
+	margin: 5px;
+	padding: 0;
+	border-bottom: 0;
+}
+
+#sidenav li {
+	padding: 0;
+	margin: 0;
+}
+
+#sidenav li.title, #sidenav li.titleFooter {
+	background: #eee; 
+	color: #000;
+	padding: 10px;
+	font-weight: bold;
+	border-bottom: 1px solid #ddd;
+}
+
+#sidenav li.titleFooter {
+	height: 0;
+	padding: 0;
+	margin: 0;
+	border-bottom: none;
+}
+
+#sidenav li a, #sidenav li a:link, #sidenav li a:visited {
+	background: #fff; 
+	color: #000; 
+	padding: 10px 10px 10px 15px; 
+	border-bottom: none;
+	display: block; 
+	text-decoration: none;
+}
+
+#sidenav li a:hover {
+	background: #eee; 
+	border-left: 5px #4780ae solid; 
+	padding-left: 10px;
+}
+
+/*  Images 
+---------------------------------------------------------------*/
+img {
+	border: 0px none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.imgfloatleft {
+	float: left;
+	border-right: 4px solid #FFF;
+	border-bottom: 4px solid #FFF;
+}
+
+.imgfloatright {
+	float: right;
+	border-left: 4px solid #FFF;
+	border-bottom: 4px solid #FFF;
+}
+
+/*  H1 H2 H3
+---------------------------------------------------------------*/
+h1 {
+	font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.8em; /* 27px */
+	font-weight: normal;
+	color: #0973b0;
+}
+
+h2 {
+	font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.33em; /* 24px */
+	font-weight: bold;
+	color: #0973b0;
+	margin: 0 0 5px 0;
+}
+
+h3 {
+	font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.30em; /* 21px */
+	font-weight: normal;
+	color: #0973b0;
+}
+
+
+/*  Customize and Order Buttons
+---------------------------------------------------------------*/
+input.button {
+	border: 1px solid #ddd;
+	background: #f9f9f9;
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: #000;
+	padding: 2px 10px !important;
+	padding: 2px 0px;
+	margin: 2px;
+}
+
+input.button:hover, input.button:sfhover { 
+	border: 1px solid #3da6b8; 
+	background: #e7eef0;
+}
+
+input.buyButton, input.customizeButton, input.checkoutButton, input.continueButton, input.goBackButton, input.updateButton, input.loginButton, input.saveOrderButton, input.confirmOrderButton, .continueLink, .goBackLink, .updateLink, .loginLink, .continueLink, .checkoutLink, .saveOrderLink, .saveOrderLink, .confirmOrderLink, .editOrderLink, .editPaymentLink, .editSystemLink, .emailSpecsLink, .applyCouponLink, .createAccountLink, .addToCartLink, .payWithGoogleLink, .payWithPayPalLink, .payWithCreditCardLink, .payWithCheckWireLink {
+	border: 1px solid #ddd;
+	background: #f9f9f9;
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: #000;
+	padding: 2px 10px !important;
+	padding: 2px 0px;
+	margin: 2px;
+}
+
+input.buyButton:hover, input.customizeButton:hover, input.checkoutButton:hover, input.continueButton:hover, input.goBackButton:hover, input.updateButton:hover, input.loginButton:hover, input.saveOrderButton:hover, input.confirmOrderButton:hover, .continueLink:hover, .goBackLink:hover, .updateLink:hover, .loginLink:hover, .continueLink:hover, .checkoutLink:hover, .saveOrderLink:hover, .saveOrderLink:hover, .confirmOrderLink:hover, .editOrderLink:hover, .editPaymentLink:hover, .editSystemLink:hover, .emailSpecsLink:hover, .applyCouponLink:hover, .createAccountLink:hover, .addToCartLink:hover, .payWithGoogleLink:hover, .payWithPayPalLink:hover, .payWithCreditCardLink:hover, .payWithCheckWireLink:hover { 
+	border: 1px solid #3da6b8; 
+	background: #e7eef0;
+	text-decoration: none;
+}
+
+.continueLink, .goBackLink, .updateLink, .loginLink, .continueLink, .checkoutLink, .saveOrderLink, .saveOrderLink, .confirmOrderLink, .editOrderLink, .editPaymentLink, .editSystemLink, .emailSpecsLink, .applyCouponLink, .createAccountLink, .addToCartLink, .payWithGoogleLink, .payWithPayPalLink, .payWithCreditCardLink, .payWithCheckWireLink {
+	float: left;
+}
+
+.continueLink span, .goBackLink span, .updateLink span, .loginLink span, .continueLink span, .checkoutLink span, .saveOrderLink span, .saveOrderLink span, .confirmOrderLink span, .editOrderLink span, .editPaymentLink span, .editSystemLink span, .emailSpecsLink span, .applyCouponLink span, .createAccountLink span, .addToCartLink span, .payWithGoogleLink span, .payWithPayPalLink span, .payWithCreditCardLink span, .payWithCheckWireLink span {
+	display: block;
+	color: #000;
+}
+
+textarea, select {
+	font: normal 11px Lucida Sans Unicode,Lucida Sans,Tahoma,Helvetica,Arial;
+	border-color: #000; 
+	color: #000;
+	background: #f9f9f9;
+}
+  
+input {
+  text-indent: 2px; 
+}
+
+.textarea,
+.searchinput {
+	border: 1px solid #FFF;
+	color: #000;
+	background: #f9f9f9;
+	font-family: Verdana, Helvetica, Sans-Serif;
+	font-size: 11px;
+	padding: 2px;
+	vertical-align: middle;
+ }
+
+
+/*  Row Styles
+---------------------------------------------------------------*/
+.contentBox {
+	width: 100%;
+	border: 1px solid #353535;
+	text-align: left;
+	font-size: 1.1em; /* 11px */
+}
+
+.redRow {
+	background: #e7928d;
+	color: #c82820;
+	padding-left: 3px;
+}
+
+.greenRow {
+	background: #cce297;
+	color: #40550d;
+	padding-left: 3px;
+}
+
+.yellowRow {
+	background: #fffecc;
+	color: #a9a014;
+	padding-left: 3px;
+}
+
+.title1 {
+	background: url('images/title1BG.png') repeat-x;
+	height: 30px;
+	color: #fff;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+.title1 form {
+	margin: 0;
+}
+
+.title2 {
+	background: #1b5a9a;
+	color: #fff;
+	padding-left: 3px;
+}
+
+div#content .title1 a, div#content .title2 a {
+	color: #fff;
+}
+
+.row1, .row2 {
+	color: #000;
+	padding:2px 3px 2px 3px;
+	white-space: nowrap;
+}
+
+.row1 {
+	background: url('images/row1BG.png') repeat-x;
+}
+
+.row2 {
+	background: url('images/row2BG.png') repeat-x;
+}
+
+.full { 
+	width: 100%;
+}
+
+.half { 
+	width: 50%;
+}
+
+/*  Message Styles
+---------------------------------------------------------------*/
+.errorMessage { 
+	background: #f1c3c3;
+	color: #ff0000;
+	padding: 0.4em;
+	margin: 0 0 1em; 
+	font-weight: bold;
+	border: 1px solid #8e2424;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px; 
+}
+
+.errorMessage a {
+	color: #ff0000;
+}
+
+.successMessage { 
+	background: #caf1c3;
+	color: #008000;
+	padding: 0.4em;
+	margin: 0 0 1em; 
+	font-weight: bold;
+	border: 1px solid #348e24;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px; 
+}
+
+/*  Recipe Block Styles
+---------------------------------------------------------------*/
+.recipeBlock {
+	width: 200px;
+	padding: 5px;
+	margin: 5px;
+	text-align: center;
+	float: left;
+	border: 1px solid #b8bec3;
+}
+
+.recipeBlock .recipeImage, .recipeBlock .recipeName, .recipeBlock .recipePrice, .recipeBlock .addToCartLink {
+	display: block;
+	clear: both;
+}
+
+.recipeBlock .recipeName, .recipeBlock .recipePrice {
+	font-weight: bold;
+}
+
+.recipeBlock .recipePrice {
+	color: #000;
+}
+
+.recipeBlock .recipeDescription, .recipeBlock .recipeQty {
+}
+
+.recipeBlock .recipeAddToCart {
+	width: 200px;
+	float: left;
+	text-align: center;
+}
+
+/*  View Recipe Styles
+---------------------------------------------------------------*/
+.viewRecipeBlock {
+	text-align: left;
+	float: left;
+}
+
+.viewRecipeBlock .recipeImage {
+	width: 200px;
+	float: left;
+}
+
+.viewRecipeBlock .recipeInformation {
+	width: 500px;
+	float: left;
+	padding-left: 10px;
+}
+
+.viewRecipeBlock .recipeName, .viewRecipeBlock .recipePrice, .viewRecipeBlock .addToCartLink {
+	clear: none;
+}
+
+.viewRecipeBlock .recipeName, .viewRecipeBlock .recipePrice {
+	font-weight: bold;
+}
+
+.viewRecipeBlock .recipeName {
+	color: #4780ae;
+	font-size: 1.6em;
+}
+
+.viewRecipeBlock .recipePrice {
+	color: #000;
+}
+
+.viewRecipeBlock .recipeDescription, .viewRecipeBlock .recipeQty {
+}
+
+.viewRecipeBlock .recipeAddToCart {
+	float: left;
+	text-align: center;
+}
+
+/*  Pagination Styles
+---------------------------------------------------------------*/
+.paginationBlock {
+	clear: both;
+}
+
+.paginationPages {
+}
+
+.paginationCurrentPage span {
+	font-weight: bold;
+}
+
+.paginationPrevIconHolder {
+}
+
+.paginationPrevIconHolder .text {
+}
+
+.paginationPrevIconHolder .icon {
+}
+
+.paginationNextIconHolder {
+}
+
+.paginationNextIconHolder .text {
+}
+
+.paginationNextIconHolder .icon {
+}
+
+/*  Ingredients Styles
+---------------------------------------------------------------*/
+.ingredientsTable {
+	text-align: left;
+	font-size: 1.1em; /* 11px */
+	width: 100%;
+}
+
+.ingredientsTable th {
+	color: #4780ae;
+	text-align: left;
+	font-size: 1.1em; /* 11px */
+}
+
+.ingredientsTable td {
+	white-space: nowrap;
+}
+
+/*  Validation Styles
+---------------------------------------------------------------*/
+input.disabled {
+	border: 1px solid #F2F2F2;
+	background-color: #F2F2F2;
+}
+
+input.validation-failed, textarea.validation-failed {
+	border: 1px solid #FF3300;
+	color : #FF3300;
+}
+input.validation-passed, textarea.validation-passed {
+	border: 1px solid #00CC00;
+	color : #000;
+}
+
+.validation-advice {
+	margin: 5px 0;
+	padding: 5px;
+	background-color: #FF3300;
+	color : #FFF;
+	font-weight: bold;
+}
+
+.custom-advice {
+	margin: 5px 0;
+	padding: 5px;
+	background-color: #C8AA00;
+	color : #FFF;
+	font-weight: bold;
+}
